@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">SVM</string>
+    <string name="home">홈</string>
+    <string name="today">오늘</string>
+    <string name="now_day">월 일</string>
+    <string name="null_num">00</string>
+    <string name="now_vending">자판기 관리 현황</string>
+    <string name="set_point1">인문관</string>
+    <string name="set_point2">미디어랩스</string>
+    <string name="set_point3">학예관</string>
+    <string name="security_his">보안 카메라 내역 확인</string>
+    <string name="clean_his">청결 상태 확인</string>
+    <string name="clean">청결점수</string>
+    <string name="dust">먼지상태</string>
+    <string name="num_clean">00</string>
+    <string name="num_dust">00</string>
+    <string name="rank">랭킹</string>
+    <string name="community">커뮤니티</string>
+    <string name="setting">설정</string>
+    <string name="image">image</string>
+    <string name="num_inventory">00</string>
+    <string name="now_inventory">재고</string>
+    <string name="location_1">미디어랩스</string>
+
+    <string name="out_of_stock">재고 부족</string>
+    <string name="full_of_stock">재고 충분</string>
+    <string name="half_of_stock">재고 절반</string>
+
+    <string name="num_selling">00</string>
+    <string name="now_selling">판매 개수</string>
+    <string name="coinbox">동전함상태</string>
+    <string name="coin_full">가득참</string>
+    <string name="police_day">201515151</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">Channel ID</string>
+    <string name="fcm_message">test</string>
+    <string name="CHANNEL_ID">테스트</string>
+    <string name="channel_description">알림채널 설명</string>
+    <string name="channel_name">name</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="map">지도</string>
+    <string name="communityhello">커뮤니티 화면구성</string>
+    <string name="rankhello">랭킹화면입니다</string>
+    <string name="maphello">맵화면</string>
+    <string name="profilehello">내정보</string>
+
+
+</resources>
