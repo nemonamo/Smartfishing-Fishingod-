@@ -33,7 +33,7 @@ data class HomeResponse(
     "lt": "20220525T062304",
     "et": "20240525T062304",
     "cs": 33,
-    "cr": "SY7-GBHxEQhd",
+    "cr": "<MOBIUS_CREATOR>",
     "con": "pm1_0 :10 , pm2_5 : 13 , pm10 :14"
     }
 }

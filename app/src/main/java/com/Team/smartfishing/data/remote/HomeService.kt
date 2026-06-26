@@ -8,7 +8,6 @@ import retrofit2.http.Path
 interface HomeService {
     @Headers(
         "X-M2M-RI: 12345",
-        "X-M2M-Origin: 123",
         "nmtype: short"
     )
     @GET("/Mobius/svm/{container}/latest") // dust, ultrasonic

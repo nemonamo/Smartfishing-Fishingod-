@@ -1,0 +1,7 @@
+# Copy this file to local.properties and fill in values for your local build.
+#
+# Keep local.properties private. It can contain machine paths and API credentials.
+
+MAPS_API_KEY=YOUR_GOOGLE_MAPS_ANDROID_API_KEY
+MOBIUS_BASE_URL=http://YOUR_MOBIUS_HOST:7579/
+MOBIUS_ORIGIN=YOUR_MOBIUS_ORIGIN

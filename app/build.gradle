@@ -6,6 +6,21 @@ plugins {
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { localProperties.load(it) }
+}
+
+def mobiusBaseUrl = localProperties.getProperty('MOBIUS_BASE_URL', 'http://localhost:7579/')
+if (!mobiusBaseUrl.endsWith('/')) {
+    mobiusBaseUrl += '/'
+}
+
+def buildConfigString = { value ->
+    return '"' + value.toString().replace('\\', '\\\\').replace('"', '\\"') + '"'
+}
+
 android {
     compileSdk 32
 
@@ -17,6 +32,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "MOBIUS_BASE_URL", buildConfigString(mobiusBaseUrl)
+        buildConfigField "String", "MOBIUS_ORIGIN", buildConfigString(localProperties.getProperty('MOBIUS_ORIGIN', 'CHANGE_ME'))
     }
 
     buildTypes {
@@ -41,6 +59,7 @@ android {
 dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation "androidx.core:core:1.7.0"
     implementation 'androidx.core:core-ktx:1.7.0'
