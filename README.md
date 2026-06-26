@@ -31,7 +31,7 @@
 - Mapping: Google Maps SDK (API 키 필요)
 - Target: Android (minSdk 26, compileSdk/targetSdk 32)
 
-## 프로젝트 핵심 포인트 (README 요약용)
+## 프로젝트 핵심 포인트
 
 - 실시간에 가까운 상태 조회를 위해 폴링 기반 호출 구조를 사용
 - 상태 알림을 위한 알림 채널 및 플래그 기반 진동/이벤트 처리
